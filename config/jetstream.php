@@ -1,5 +1,6 @@
 <?php
 
+use App\Providers\RouteServiceProvider;
 use Laravel\Jetstream\Features;
 use Laravel\Jetstream\Http\Middleware\AuthenticateSession;
 
@@ -77,5 +78,5 @@ return [
     */
 
     'profile_photo_disk' => 'public',
-
+    'home' => RouteServiceProvider::HOME,
 ];
